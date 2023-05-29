@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>621</x>
+      <y>9</y>
+      <w>189</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>Person
+--
+Name		                 : String
+Age                    : int
+ContactNumber : String
+ICNumber          : String
+Gender               : char
+--
+/Accessor
+/Mutator
+DisplayStudents() : void
+DisplayStaff() : void
+DisplayEvents() : void
+DisplayClubMembers() : void
+StaffLogin(): void
+Search() : void
+toString() : String
+UpdateAge() : void 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>18</y>
+      <w>225</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>Club
+
+--
+ClubName: String
+ClubDescription: String
+ClubMembers: ArrayList&lt;Student&gt;
+ClubStaff : ArrayList&lt;Staff&gt;
+ClubEvents : ArrayList&lt;Events&gt;
+column : String[]
+--
+/Accessor
+/Mutator
+DisplayClubs() : void
+Search() : void
+findMember(int) : int
+findStaff(int) : int
+findClub(int) : Club
+findClub1(int) : int
+findEvent(int) : int
+toStringEvent() : String
+remEvent() : void
+remStaff() : void
+remStudent() : void
+toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>387</y>
+      <w>189</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>Events
+
+--
+EventID : String
+EventDate : String
+EventTime: String
+EventDuration : Double
+EventBadget : Double
+byClubID : int
+EventColumn : String[]
+--
+toString() : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>765</x>
+      <y>378</y>
+      <w>189</w>
+      <h>297</h>
+    </coordinates>
+    <panel_attributes>Staff
+
+--
+StaffNumber       : int
+StaffSalary          : Double
+UserName          : String
+PassWord           : String
+--
+/Accessor
+/Mutator
+RemovefromClub()
+AddtoClub()
+RemoveStaff()
+AlterStaff()
+AddStaff()
+AddClub()
+RemoveClub()
+RemoveStudent()
+AlterStudents()
+AddStudents()
+toString() : String
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>270</y>
+      <w>153</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>711</x>
+      <y>270</y>
+      <w>171</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>170.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>306</x>
+      <y>81</y>
+      <w>333</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;20.0;350.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>171</x>
+      <y>261</y>
+      <w>27</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>378</y>
+      <w>189</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>Students
+
+--
+StudentNumber : int
+Room                 : String
+Part                    : int
+Course               : String
+Class                 : char
+--
+/Accessor
+/Mutator
+toString() : String
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
